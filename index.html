@@ -49,6 +49,7 @@
     </nav>
 
     <header id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="wrap hero-in">
         <div class="hero-text">
           <p class="eyebrow">Front-end Engineer · Taipei</p>
@@ -75,16 +76,6 @@
             <span class="loc">台北市內湖區 · 可遠端</span>
           </div>
         </div>
-        <figure class="avatar">
-          <img
-            src="assets/avatar.jpg"
-            alt="Eddie Li 的照片"
-            width="220"
-            height="220"
-            onerror="this.parentElement.classList.add('no-photo')"
-          />
-          <span class="avatar-fallback" aria-hidden="true">E</span>
-        </figure>
       </div>
       <div class="wrap focus" aria-label="專長領域">
         <div class="focus-card">
@@ -135,8 +126,8 @@
                     已上架、Android 封閉測試完成。
                   </li>
                   <li>
-                    一人 + AI agent 交付整套系統:NestJS API、RN/Expo
-                    App、Next.js 落地頁、組織後台與平台後台,Nx monorepo 單一 repo。
+                    一人 + AI agent 交付整套系統:iOS / Android 雙 App、系統後台(平台管理)、租戶後台(教室 / 場館)、手機版網站,以及
+                    NestJS API;Nx monorepo 單一 repo。
                   </li>
                   <li>
                     建立機器可驗證的工程治理:516 條決策帳本、story

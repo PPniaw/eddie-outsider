@@ -223,10 +223,16 @@ p {
   color: var(--hero-ink);
   padding: 64px 0 0;
   position: relative;
-  overflow: hidden;
 }
 
-.hero::before {
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-bg::before {
   content: "";
   position: absolute;
   inset: -40% -20% auto auto;
@@ -245,10 +251,6 @@ p {
 
 .hero-in {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 40px;
-  align-items: center;
 }
 
 .hero .eyebrow {
@@ -304,44 +306,6 @@ p {
   margin-left: 6px;
 }
 
-.avatar {
-  margin: 0;
-  position: relative;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid rgba(143, 224, 211, 0.35);
-  box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
-  background: linear-gradient(145deg, #1f3a36, #12201e);
-}
-
-.avatar img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.avatar-fallback {
-  display: none;
-  position: absolute;
-  inset: 0;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--serif);
-  font-size: 96px;
-  font-weight: 900;
-  color: var(--hero-accent);
-}
-
-.avatar.no-photo img {
-  display: none;
-}
-
-.avatar.no-photo .avatar-fallback {
-  display: flex;
-}
 
 .focus {
   position: relative;
@@ -704,20 +668,6 @@ p {
     padding-top: 40px;
   }
 
-  .hero-in {
-    grid-template-columns: 1fr;
-  }
-
-  .avatar {
-    order: -1;
-    width: 132px;
-    height: 132px;
-  }
-
-  .avatar-fallback {
-    font-size: 60px;
-  }
-
   .focus {
     grid-template-columns: 1fr;
     margin-top: 40px;
@@ -803,12 +753,6 @@ p {
     padding: 0;
   }
 
-  .avatar {
-    width: 96pt;
-    height: 96pt;
-    border-color: #ddd;
-    box-shadow: none;
-  }
 
   .focus {
     transform: none;
