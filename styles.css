@@ -499,6 +499,16 @@ p {
   color: var(--accent);
 }
 
+.tl-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 14px;
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 500;
+}
+
 /* projects */
 
 .proj-top {
