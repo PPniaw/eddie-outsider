@@ -549,6 +549,13 @@ p {
   font-size: 22px;
 }
 
+.proj-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px 14px;
+}
+
 .proj-link {
   font-family: var(--mono);
   font-size: 13px;
