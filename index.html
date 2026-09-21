@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eddie Li 李冠鵬 · 前端工程師</title>
+    <meta
+      name="description"
+      content="Eddie Li 李冠鵬,十年前端工程經驗。專精大規模系統架構、monorepo、權限系統設計與 AI 工程流程導入。"
+    />
+    <meta property="og:title" content="Eddie Li 李冠鵬 · 前端工程師" />
+    <meta
+      property="og:description"
+      content="十年前端工程經驗。專精大規模系統架構、monorepo、權限系統設計與 AI 工程流程導入。"
+    />
+    <meta property="og:type" content="profile" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231f5f5b'/><text x='16' y='22' font-family='serif' font-size='18' font-weight='700' text-anchor='middle' fill='%23f6f2ea'>E</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#experience">跳到工作經歷</a>
+
+    <header class="masthead">
+      <div class="wrap">
+        <p class="eyebrow">Front-end Engineer · 台北</p>
+        <h1 class="name">
+          <span class="name-en">Eddie Li</span
+          ><span class="name-zh">李冠鵬</span>
+        </h1>
+        <p class="lede">
+          十年前端工程經驗,注重 UI/UX 與團隊流程,專精於大規模系統架構設計與
+          monorepo
+          應用構建。深耕多品牌電商平台、複雜權限系統設計與工程化最佳實踐。信奉第一性原理,在技術決策中重視可追溯的設計理由(ADR
+          文件化)。主動探索新興技術與 AI 系統整合。
+        </p>
+        <ul class="contact" aria-label="聯絡方式">
+          <li>
+            <a href="mailto:eddie.outsider@gmail.com"
+              >eddie.outsider@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/PPniaw"
+              rel="me noopener"
+              target="_blank"
+              >github.com/PPniaw</a
+            >
+          </li>
+          <li><span>台北市內湖區 · 可遠端</span></li>
+        </ul>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="章節">
+      <div class="wrap">
+        <a href="#experience">經歷</a>
+        <a href="#skills">技能</a>
+        <a href="#education">學歷</a>
+        <a href="#traits">特質</a>
+        <button type="button" class="print" onclick="window.print()">
+          列印 / PDF
+        </button>
+      </div>
+    </nav>
+
+    <main class="wrap">
+      <section id="experience" class="section">
+        <h2>工作經歷</h2>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>主任工程師 <span class="org">明門實業股份有限公司</span></h3>
+            <p class="when"><time datetime="2025-10">2025.10</time> – 現在</p>
+          </div>
+          <ul>
+            <li>
+              負責公司電商平台與相關網站的前端架構設計、開發及維護,持續優化效能、SEO、UI/UX
+              與系統可維護性。
+            </li>
+            <li>
+              設計並實施跨品牌、多國電商平台的前端架構,以 Turborepo monorepo +
+              pnpm 建立公司共用 packages,推動元件化與標準化流程,支援 Magento
+              系統全面改寫規劃。
+            </li>
+            <li>
+              推行架構決策記錄(ADR)工作流,系統化記錄技術決策理由,讓團隊決策可追溯、知識可沉澱。
+            </li>
+            <li>
+              主導 AI Engineering 導入:建立 AI 開發流程、安全規範與最佳實務,整合
+              MCP(Model Context Protocol)、Skills 與內部工具,打造公司專屬 MCP
+              Server 並串接企業聊天平台,讓開發、產品與其他團隊把 AI
+              帶進日常工作流。
+            </li>
+          </ul>
+          <p class="stack">
+            React · TypeScript · Turborepo · pnpm · MCP Server · Confluence
+            知識索引
+          </p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>
+              前端工程師 <span class="org">永聯物流開發股份有限公司(ALP)</span>
+            </h3>
+            <p class="when">
+              <time datetime="2024-11">2024.11</time> –
+              <time datetime="2025-07">2025.07</time>
+            </p>
+          </div>
+          <ul>
+            <li>
+              以 Turborepo + pnpm 建置 monorepo,使用 TypeScript + Zod
+              強化型別安全與執行期驗證。
+            </li>
+            <li>
+              基於 MUI 構建企業級 UI 庫並以 Storybook
+              文件化,實現跨品牌、跨組織的設計系統一致性。
+            </li>
+            <li>
+              設計 JWT 權限字串架構,透過結構化解析實現「組織 ×
+              角色」二維權限矩陣,支援細粒度的頁面與功能授權。
+            </li>
+            <li>
+              以 WebSocket
+              構建即時物流資訊視窗,支援車隊即時追蹤與多執行緒資料更新。
+            </li>
+            <li>
+              基於 LINE LIFF 開發司機行動回報應用,整合 GPS
+              定位、相片上傳與表單驗證。
+            </li>
+          </ul>
+          <p class="stack">
+            React · TypeScript · Zod · MUI · Storybook · WebSocket · LINE LIFF
+          </p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>前端工程師 <span class="org">艾立運能股份有限公司</span></h3>
+            <p class="when">
+              <time datetime="2021-12">2021.12</time> –
+              <time datetime="2024-11">2024.11</time>
+            </p>
+          </div>
+          <ul>
+            <li>
+              以 Create React App + Craco 建置 React SPA,pnpm 管理
+              packages,TypeScript + Yup 強化型別與表單驗證。
+            </li>
+            <li>
+              導入 SWR 作為 API 快取層,減少冗餘請求並讓跨元件共享 API
+              資料,提升應用效能。
+            </li>
+            <li>
+              以 React Context 取代 Redux
+              做局部狀態管理,降低引入複雜狀態庫的認知負擔。
+            </li>
+            <li>
+              以 Custom Hooks 複用邏輯,整合 i18next 支援中、英、日多語系介面。
+            </li>
+            <li>
+              遵循 Domain-Driven Design 搭配 Scrum,與跨職能團隊快速迭代交付。
+            </li>
+          </ul>
+          <p class="stack">React · TypeScript · SWR · i18next · DDD · Scrum</p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>Software Engineer <span class="org">云桐科技有限公司</span></h3>
+            <p class="when">
+              <time datetime="2020-11">2020.11</time> –
+              <time datetime="2021-12">2021.12</time>
+            </p>
+          </div>
+          <ul>
+            <li>
+              手動配置 Webpack,建立模組化 React 專案架構,運用 React.lazy
+              實現程式碼分割。
+            </li>
+            <li>以 TypeScript 強化型別安全,react-router-dom 構建路由系統。</li>
+            <li>
+              以 Redux + Redux-Saga
+              管理全域狀態與非同步操作,確保狀態流動可預測。
+            </li>
+            <li>Git Flow 搭配 Jenkins CI/CD,確保程式碼品質與自動化部署。</li>
+          </ul>
+          <p class="stack">
+            React · TypeScript · Webpack · Redux-Saga · Jenkins
+          </p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>App Engineer <span class="org">聖勝科技有限公司</span></h3>
+            <p class="when">
+              <time datetime="2020-06">2020.06</time> –
+              <time datetime="2020-10">2020.10</time>
+            </p>
+          </div>
+          <ul>
+            <li>
+              以 React Native 開發跨平台行動應用,透過 Microsoft CodePush 實現
+              OTA 即時更新。
+            </li>
+            <li>
+              Class Component + Styled-components 分離 UI 與業務邏輯;Redux +
+              Redux-Saga 管理全域狀態,以 HOC 與 Render Props 複用元件邏輯。
+            </li>
+          </ul>
+          <p class="stack">
+            React Native · CodePush · Redux-Saga · Styled-components
+          </p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>
+              前端工程師
+              <span class="org">TCGaming Solutions Inc.(菲律賓)</span>
+            </h3>
+            <p class="when">
+              <time datetime="2019-09">2019.09</time> –
+              <time datetime="2020-06">2020.06</time>
+            </p>
+          </div>
+          <ul>
+            <li>海外團隊前端開發,React 為主。</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>
+              前端工程師 <span class="org">康百事生物資訊股份有限公司</span>
+            </h3>
+            <p class="when">
+              <time datetime="2017-09">2017.09</time> –
+              <time datetime="2019-06">2019.06</time>
+            </p>
+          </div>
+          <ul>
+            <li>
+              與 PM、後端工程師、UI/UX 設計師協作開發基因分析 Web 平台,Vue +
+              Vuex 管理全域狀態。
+            </li>
+            <li>以 Bootstrap Grid + SASS 客製化 UI,實現響應式網頁設計。</li>
+            <li>使用 Docker 進行應用打包與容器化部署。</li>
+          </ul>
+          <p class="stack">Vue · Vuex · SASS · Bootstrap · Docker</p>
+        </article>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>技術技能</h2>
+        <dl class="skills">
+          <div>
+            <dt>核心前端</dt>
+            <dd>
+              JavaScript (ES6+)、TypeScript、React、React Hooks、Vue、React
+              Native、Next.js
+            </dd>
+          </div>
+          <div>
+            <dt>狀態與資料</dt>
+            <dd>
+              Redux / Redux-Saga、Vuex、React Context、SWR、TanStack Query、Zod
+              / Yup
+            </dd>
+          </div>
+          <div>
+            <dt>工具鏈</dt>
+            <dd>
+              Webpack、Vite、Monorepo(Turborepo /
+              Nx)、pnpm、Storybook、Playwright、i18n
+            </dd>
+          </div>
+          <div>
+            <dt>樣式與 UI</dt>
+            <dd>
+              CSS / SCSS、Styled-components、MUI、Bootstrap、Figma、Responsive
+              Design
+            </dd>
+          </div>
+          <div>
+            <dt>流程與部署</dt>
+            <dd>
+              Git / Git Flow、CI/CD(Jenkins)、Docker、ADR 文件化、Scrum、DDD
+            </dd>
+          </div>
+          <div>
+            <dt>專業深化</dt>
+            <dd>
+              前端權限系統設計(結構化權限編碼、角色 ×
+              組織矩陣、細粒度授權);Headless CMS(Sanity.io、內容即程式碼)
+            </dd>
+          </div>
+          <div>
+            <dt>AI Engineering</dt>
+            <dd>
+              AI 基礎架構建設、MCP Server 與 Skills 設計、AI
+              開發流程與安全規範、Claude Code / Claude Design
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="education" class="section">
+        <h2>學歷與語言</h2>
+        <div class="edu">
+          <div class="job-head">
+            <h3>中國醫藥大學 <span class="org">口腔衛生學系 · 學士</span></h3>
+            <p class="when">
+              <time datetime="2009-09">2009</time> –
+              <time datetime="2012-06">2012</time>
+            </p>
+          </div>
+        </div>
+        <dl class="skills">
+          <div>
+            <dt>繁體中文</dt>
+            <dd>母語</dd>
+          </div>
+          <div>
+            <dt>English</dt>
+            <dd>TOEIC 815;技術文件閱讀、書寫與溝通</dd>
+          </div>
+          <div>
+            <dt>台語</dt>
+            <dd>中等</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="traits" class="section">
+        <h2>核心特質</h2>
+        <ul class="traits">
+          <li>
+            <strong>第一性原理思維</strong
+            >追求技術決策的根本理由,重視設計的可追溯性,不盲目跟風。
+          </li>
+          <li>
+            <strong>系統化思維</strong
+            >注重架構設計、文件化決策(ADR)、知識沉澱與複用。
+          </li>
+          <li>
+            <strong>持續學習</strong>主動探索新興技術與工程實踐,對 AI 工具、LLM
+            機制與系統整合保有好奇心。
+          </li>
+          <li>
+            <strong>工程化實踐</strong
+            >重視程式碼品質、可維護性與團隊協作,推行最佳實踐與知識分享。
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="wrap foot">
+      <p>Eddie Li · 最後更新 2026.09</p>
+    </footer>
+  </body>
+</html>
