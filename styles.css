@@ -175,6 +175,19 @@ p {
 
 /* nav */
 
+/* 語言切換和 PDF 收成右側同一組，窄螢幕不被導覽連結擠掉。 */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.lang-switch {
+  min-width: 44px;
+  text-align: center;
+}
+
 .nav {
   position: sticky;
   top: 0;
@@ -745,6 +758,10 @@ p {
     gap: 14px;
   }
 
+  .brand {
+    white-space: nowrap;
+  }
+
   .timeline {
     padding-left: 22px;
   }
@@ -760,6 +777,14 @@ p {
   .facts > div {
     grid-template-columns: 1fr;
     gap: 2px;
+  }
+}
+
+/* 手機上章節連結放不下(加了語言切換之後英文版會撐出水平捲動、中文版擠成直排),
+   收掉;往下捲就是各章節，名字、語言切換和 PDF 留著。 */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
   }
 }
 

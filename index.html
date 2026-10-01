@@ -14,6 +14,8 @@
       content="十年前端工程經驗。專精大規模系統架構、monorepo、權限系統設計與 AI 工程流程導入。"
     />
     <meta property="og:type" content="profile" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://eddie-outsider.vercel.app/" />
+    <link rel="alternate" hreflang="en" href="https://eddie-outsider.vercel.app/en" />
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2312201e'/><text x='16' y='22' font-family='serif' font-size='18' font-weight='700' text-anchor='middle' fill='%238fe0d3'>E</text></svg>"
@@ -39,13 +41,22 @@
           <a href="#skills">技能</a>
           <a href="#about">關於</a>
         </div>
-        <button
-          type="button"
-          class="btn btn-ghost btn-sm"
-          onclick="window.print()"
-        >
-          PDF
-        </button>
+        <div class="nav-actions">
+          <a
+            class="btn btn-ghost btn-sm lang-switch"
+            href="/en"
+            hreflang="en"
+            lang="en"
+            >EN</a
+          >
+          <button
+            type="button"
+            class="btn btn-ghost btn-sm"
+            onclick="window.print()"
+          >
+            PDF
+          </button>
+        </div>
       </div>
     </nav>
 

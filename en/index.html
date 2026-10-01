@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eddie Li · Front-end Engineer</title>
+    <meta
+      name="description"
+      content="Eddie Li, front-end engineer with ten years of experience in large-scale system architecture, monorepos, permission systems and AI engineering workflows."
+    />
+    <meta property="og:title" content="Eddie Li · Front-end Engineer" />
+    <meta
+      property="og:description"
+      content="Ten years of front-end engineering: large-scale architecture, monorepos, permission systems and AI engineering workflows."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="en_US" />
+    <link
+      rel="alternate"
+      hreflang="zh-Hant"
+      href="https://eddie-outsider.vercel.app/"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://eddie-outsider.vercel.app/en"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2312201e'/><text x='16' y='22' font-family='serif' font-size='18' font-weight='700' text-anchor='middle' fill='%238fe0d3'>E</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#experience">Skip to experience</a>
+
+    <nav class="nav" aria-label="Sections">
+      <div class="wrap nav-in">
+        <a class="brand" href="#top">Eddie Li</a>
+        <div class="nav-links">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#decks">Decks</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+        </div>
+        <div class="nav-actions">
+          <a
+            class="btn btn-ghost btn-sm lang-switch"
+            href="/"
+            hreflang="zh-Hant"
+            lang="zh-Hant"
+            >中文</a
+          >
+          <button
+            type="button"
+            class="btn btn-ghost btn-sm"
+            onclick="window.print()"
+          >
+            PDF
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <p class="eyebrow">Front-end Engineer · Taipei</p>
+          <h1 class="name">
+            <span class="name-en">Eddie Li</span
+            ><span class="name-zh" lang="zh-Hant">李冠鵬</span>
+          </h1>
+          <p class="tagline">
+            Ten years of front-end engineering. I turn
+            <em>large-scale system architecture</em>, <em>monorepos</em> and
+            <em>permission systems</em> into something a team can maintain for
+            years, and I bring AI engineering workflows into everyday
+            development.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="mailto:eddie.outsider@gmail.com"
+              >Email me</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/PPniaw"
+              rel="me noopener"
+              target="_blank"
+              >GitHub</a
+            >
+            <span class="loc">Neihu, Taipei · Open to remote</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap focus" aria-label="Focus areas">
+        <div class="focus-card">
+          <span class="focus-k">01</span>
+          <strong>Architecture &amp; Monorepos</strong>
+          <p>
+            Turborepo / Nx + pnpm, shared packages, componentization and
+            standardized workflows that let brands and products share code.
+          </p>
+        </div>
+        <div class="focus-card">
+          <span class="focus-k">02</span>
+          <strong>Permission Systems</strong>
+          <p>
+            Structured permission encoding, an organization × role matrix, and
+            fine-grained page and feature authorization.
+          </p>
+        </div>
+        <div class="focus-card">
+          <span class="focus-k">03</span>
+          <strong>AI Engineering</strong>
+          <p>
+            MCP servers, Skills, AI development workflows and safety guidelines,
+            wired into the company chat platform so teams actually use them.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="experience" class="section">
+        <div class="wrap">
+          <div class="sec-head">
+            <p class="eyebrow">Experience</p>
+            <h2>Work Experience</h2>
+          </div>
+          <ol class="timeline">
+            <li class="tl-item is-now">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2026-07">2026.07</time> – Present
+                  <span class="pill">Current</span>
+                </div>
+                <h3>
+                  Independent Developer
+                  <span class="org"
+                    >Pik, activity management &amp; matching platform (personal
+                    product)</span
+                  >
+                </h3>
+                <ul>
+                  <li>
+                    From product insight to app store: a sign-up and scheduling
+                    system shared by clubs, studios and venues. Live on iOS;
+                    Android closed testing completed.
+                  </li>
+                  <li>
+                    Shipped the whole system as one person with AI agents: iOS
+                    and Android apps, a platform admin console, a tenant console
+                    (studios / venues), a mobile website and a NestJS API, all
+                    in a single Nx monorepo.
+                  </li>
+                  <li>
+                    Built machine-checkable engineering governance: a 516-entry
+                    decision log, a story ledger reconciled against tests, an
+                    event map generated from code, and two rounds of adversarial
+                    audits (zero P0 findings in round two).
+                  </li>
+                  <li>
+                    Domain design: CAS optimistic locking for capacity, a
+                    Postgres LISTEN/NOTIFY notification pipeline, RRULE
+                    recurring events, EXCLUDE-constraint table assignment, and
+                    sign-up-chain group formation.
+                  </li>
+                </ul>
+                <p class="chips">
+                  <span>React Native</span><span>NestJS</span><span>Prisma</span
+                  ><span>Next.js</span><span>Nx</span><span>Playwright</span
+                  ><span>Claude Code</span>
+                </p>
+                <p class="tl-links">
+                  <a
+                    href="https://pik-slides.vercel.app/s/pik-intro"
+                    target="_blank"
+                    rel="noopener"
+                    >Product tour (zh) ↗</a
+                  >
+                  <a
+                    href="https://pik-slides.vercel.app/s/pik-tech-deep-dive"
+                    target="_blank"
+                    rel="noopener"
+                    >Tech deep dive (zh) ↗</a
+                  >
+                  <a
+                    href="https://pik-singular.com"
+                    target="_blank"
+                    rel="noopener"
+                    >pik-singular.com ↗</a
+                  >
+                </p>
+              </div>
+            </li>
+            <li class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2025-10">2025.10</time> –
+                  <time datetime="2026-07">2026.07</time>
+                </div>
+                <h3>
+                  Lead Engineer
+                  <span class="org">Wonderland Nurserygoods (明門實業)</span>
+                </h3>
+                <ul>
+                  <li>
+                    Owned front-end architecture, development and maintenance
+                    for the e-commerce platform and related sites, continuously
+                    improving performance, SEO, UI/UX and maintainability.
+                  </li>
+                  <li>
+                    Designed the front-end architecture for a multi-brand,
+                    multi-country e-commerce platform; built shared company
+                    packages with Turborepo + pnpm, drove componentization and
+                    standardized workflows, and supported the plan for a full
+                    Magento rewrite.
+                  </li>
+                  <li>
+                    Introduced an Architecture Decision Record (ADR) workflow so
+                    technical decisions are traceable and knowledge accumulates.
+                  </li>
+                  <li>
+                    Led AI Engineering adoption: set up AI development
+                    workflows, safety guidelines and best practices, built the
+                    company's own MCP server and connected it to the enterprise
+                    chat platform, bringing AI into the daily work of
+                    engineering, product and other teams.
+                  </li>
+                </ul>
+                <p class="chips">
+                  <span>React</span><span>TypeScript</span><span>Turborepo</span
+                  ><span>pnpm</span><span>MCP</span><span>ADR</span>
+                </p>
+                <p class="tl-links">
+                  <a
+                    href="https://pik-slides.vercel.app/s/ai-harness-overview"
+                    target="_blank"
+                    rel="noopener"
+                    >AI Harness overview (zh) ↗</a
+                  >
+                  <a
+                    href="https://pik-slides.vercel.app/s/ai-harness-deep-dive"
+                    target="_blank"
+                    rel="noopener"
+                    >AI Harness deep dive (zh) ↗</a
+                  >
+                  <a
+                    href="https://pik-slides.vercel.app/s/agentic-cms"
+                    target="_blank"
+                    rel="noopener"
+                    >Rethinking the CMS (zh) ↗</a
+                  >
+                </p>
+              </div>
+            </li>
+
+            <li class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2024-11">2024.11</time> –
+                  <time datetime="2025-07">2025.07</time>
+                </div>
+                <h3>
+                  Front-end Engineer
+                  <span class="org">ALP (永聯物流開發)</span>
+                </h3>
+                <ul>
+                  <li>
+                    Set up a Turborepo + pnpm monorepo; TypeScript + Zod for
+                    type safety and runtime validation.
+                  </li>
+                  <li>
+                    Built an enterprise UI library on MUI, documented in
+                    Storybook, for a consistent design system across brands and
+                    organizations.
+                  </li>
+                  <li>
+                    Designed a JWT permission-string scheme parsed into an
+                    organization × role permission matrix, enabling fine-grained
+                    page and feature authorization.
+                  </li>
+                  <li>
+                    Built a real-time logistics dashboard over WebSocket for
+                    live fleet tracking, and a LINE LIFF driver reporting app
+                    with GPS, photo upload and form validation.
+                  </li>
+                </ul>
+                <p class="chips">
+                  <span>React</span><span>Zod</span><span>MUI</span
+                  ><span>Storybook</span><span>WebSocket</span
+                  ><span>LINE LIFF</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2021-12">2021.12</time> –
+                  <time datetime="2024-11">2024.11</time>
+                </div>
+                <h3>Front-end Engineer <span class="org">艾立運能</span></h3>
+                <ul>
+                  <li>
+                    Built a React SPA with CRA + Craco, managed packages with
+                    pnpm, and used TypeScript + Yup for types and form
+                    validation.
+                  </li>
+                  <li>
+                    Introduced SWR as the API cache layer to cut redundant
+                    requests and share data across components; replaced Redux
+                    with React Context for local state.
+                  </li>
+                  <li>
+                    Reused logic through custom hooks and integrated i18next for
+                    Chinese, English and Japanese; followed DDD with Scrum and
+                    iterated quickly with a cross-functional team.
+                  </li>
+                </ul>
+                <p class="chips">
+                  <span>React</span><span>SWR</span><span>i18next</span
+                  ><span>DDD</span><span>Scrum</span>
+                </p>
+                <p class="tl-links">
+                  <a
+                    href="https://pik-slides.vercel.app/s/ally-architecture-evolution-public"
+                    target="_blank"
+                    rel="noopener"
+                    >Front-end architecture evolution, public edition (zh) ↗</a
+                  >
+                </p>
+              </div>
+            </li>
+
+            <li class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2020-11">2020.11</time> –
+                  <time datetime="2021-12">2021.12</time>
+                </div>
+                <h3>Software Engineer <span class="org">云桐科技</span></h3>
+                <ul>
+                  <li>
+                    Configured Webpack by hand for a modular React architecture
+                    with React.lazy code splitting; Redux + Redux-Saga for
+                    global state and async flows.
+                  </li>
+                  <li>
+                    Git Flow with Jenkins CI/CD for code quality and automated
+                    deployment.
+                  </li>
+                </ul>
+                <p class="chips">
+                  <span>Webpack</span><span>Redux-Saga</span
+                  ><span>Jenkins</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2020-06">2020.06</time> –
+                  <time datetime="2020-10">2020.10</time>
+                </div>
+                <h3>App Engineer <span class="org">聖勝科技</span></h3>
+                <ul>
+                  <li>
+                    Cross-platform React Native apps with Microsoft CodePush
+                    over-the-air updates; Styled-components to separate UI from
+                    business logic, HOCs and render props to reuse component
+                    logic.
+                  </li>
+                </ul>
+                <p class="chips">
+                  <span>React Native</span><span>CodePush</span
+                  ><span>Redux-Saga</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2019-09">2019.09</time> –
+                  <time datetime="2020-06">2020.06</time>
+                </div>
+                <h3>
+                  Front-end Engineer
+                  <span class="org">TCGaming Solutions Inc. · Philippines</span>
+                </h3>
+                <ul>
+                  <li>
+                    Front-end development on an overseas team, mainly React.
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2017-09">2017.09</time> –
+                  <time datetime="2019-06">2019.06</time>
+                </div>
+                <h3>
+                  Front-end Engineer
+                  <span class="org">康百事生物資訊 (bioinformatics)</span>
+                </h3>
+                <ul>
+                  <li>
+                    Worked with PMs, back-end engineers and UI/UX designers on a
+                    gene-analysis web platform in Vue + Vuex; responsive layouts
+                    with Bootstrap Grid + SASS; containerized deployment with
+                    Docker.
+                  </li>
+                </ul>
+                <p class="chips">
+                  <span>Vue</span><span>Vuex</span><span>SASS</span
+                  ><span>Docker</span>
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-alt">
+        <div class="wrap">
+          <div class="sec-head">
+            <p class="eyebrow">Projects</p>
+            <h2>Projects</h2>
+          </div>
+          <div class="grid-2">
+            <article class="card proj">
+              <div class="proj-top">
+                <h3>Pik</h3>
+                <span class="proj-links">
+                  <a
+                    class="proj-link"
+                    href="https://pik-slides.vercel.app/s/pik-intro"
+                    target="_blank"
+                    rel="noopener"
+                    >Product tour (zh) ↗</a
+                  >
+                  <a
+                    class="proj-link"
+                    href="https://pik-slides.vercel.app/s/pik-tech-deep-dive"
+                    target="_blank"
+                    rel="noopener"
+                    >Tech deep dive (zh) ↗</a
+                  >
+                  <a
+                    class="proj-link"
+                    href="https://pik-singular.com"
+                    target="_blank"
+                    rel="noopener"
+                    >pik-singular.com ↗</a
+                  >
+                </span>
+              </div>
+              <p>
+                A platform for group activities: organizers set up events
+                easily, and members sign up or join with one link shared in a
+                LINE group. Live on iOS; Android closed testing completed.
+              </p>
+              <p class="proj-note">
+                Built independently. One Nx monorepo covers the RN/Expo app,
+                NestJS API, Next.js landing pages and the organization console;
+                includes a permission catalog, an activity lifecycle state
+                machine, venue booking and sign-up-chain group formation, with
+                every design trade-off recorded as an ADR.
+              </p>
+              <p class="chips">
+                <span>React Native</span><span>Expo</span><span>NestJS</span
+                ><span>Prisma</span><span>Next.js</span><span>Nx</span
+                ><span>Playwright</span>
+              </p>
+            </article>
+
+            <article class="card proj">
+              <div class="proj-top">
+                <h3>Enterprise MCP Server</h3>
+                <span class="proj-link muted">Internal</span>
+              </div>
+              <p>
+                A company-specific MCP server I led at Wonderland, connecting
+                internal systems and the enterprise chat platform so
+                engineering, product and business teams can query business logic
+                and the knowledge base in natural language.
+              </p>
+              <p class="proj-note">
+                Also set up AI development workflows, safety guidelines and
+                Skills, with a structured Confluence knowledge index to support
+                collaboration between the team and AI.
+              </p>
+              <p class="chips">
+                <span>MCP</span><span>TypeScript</span><span>Confluence</span
+                ><span>Skills</span>
+              </p>
+            </article>
+
+            <article class="card proj">
+              <div class="proj-top">
+                <h3>Microfrontend</h3>
+                <a
+                  class="proj-link"
+                  href="https://github.com/PPniaw/Microfrontend"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub ↗</a
+                >
+              </div>
+              <p>
+                A cross-framework micro-frontend demo with Vue and React:
+                Turborepo for the monorepo, RxJS for state shared across apps.
+              </p>
+              <p class="chips">
+                <span>Vue</span><span>React</span><span>Turborepo</span
+                ><span>RxJS</span>
+              </p>
+            </article>
+
+            <article class="card proj">
+              <div class="proj-top">
+                <h3>Shelf</h3>
+                <a
+                  class="proj-link"
+                  href="https://github.com/PPniaw/Shelf"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub ↗</a
+                >
+              </div>
+              <p>
+                A macOS desktop utility: a drag-and-drop shelf for sorting
+                images. Native Swift practice beyond the front end.
+              </p>
+              <p class="chips"><span>Swift</span><span>macOS</span></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="decks" class="section">
+        <div class="wrap">
+          <div class="sec-head">
+            <p class="eyebrow">Decks</p>
+            <h2>Talks &amp; Decks</h2>
+          </div>
+          <p class="legend">All decks are in Traditional Chinese.</p>
+          <div class="grid-3 decks">
+            <a
+              class="card deck"
+              href="https://pik-slides.vercel.app/s/pik-intro"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="deck-tag">Pik</span>
+              <h3>Pik: Product Tour</h3>
+              <p>
+                A walk through the real product: clubs, studios and venues, the
+                app and the consoles. 17 slides.
+              </p>
+              <span class="deck-open">Open ↗</span>
+            </a>
+            <a
+              class="card deck"
+              href="https://pik-slides.vercel.app/s/pik-tech-deep-dive"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="deck-tag">Pik</span>
+              <h3>Pik: Tech Deep Dive</h3>
+              <p>
+                Architecture, domain design and agent-native engineering
+                governance; a production system built by one person with AI
+                agents. 23 slides.
+              </p>
+              <span class="deck-open">Open ↗</span>
+            </a>
+            <a
+              class="card deck"
+              href="https://pik-slides.vercel.app/s/ai-harness-overview"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="deck-tag">AI Engineering</span>
+              <h3>AI Harness Engineering: Overview</h3>
+              <p>
+                Turning AI collaboration into a verifiable engineering process:
+                five steps, guardrails and records.
+              </p>
+              <span class="deck-open">Open ↗</span>
+            </a>
+            <a
+              class="card deck"
+              href="https://pik-slides.vercel.app/s/ai-harness-deep-dive"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="deck-tag">AI Engineering</span>
+              <h3>AI Harness Engineering: Deep Dive</h3>
+              <p>
+                Failure modes mined from my own usage logs, experiment design
+                and the full workflow.
+              </p>
+              <span class="deck-open">Open ↗</span>
+            </a>
+            <a
+              class="card deck"
+              href="https://pik-slides.vercel.app/s/agentic-cms"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="deck-tag">E-commerce</span>
+              <h3>When the Bottleneck Disappears</h3>
+              <p>
+                Rebuilding a CMS, and what is worth rethinking in the AI era:
+                replacing the admin editor with an agent + MCP.
+              </p>
+              <span class="deck-open">Open ↗</span>
+            </a>
+            <a
+              class="card deck"
+              href="https://pik-slides.vercel.app/s/ally-architecture-evolution-public"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="deck-tag">Logistics</span>
+              <h3>Evolving a Logistics Front End</h3>
+              <p>
+                Two generations of front end, two-layer JWT, template-driven UI
+                and a permission grammar; de-identified public edition.
+              </p>
+              <span class="deck-open">Open ↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="wrap">
+          <div class="sec-head">
+            <p class="eyebrow">Skills</p>
+            <h2>Technical Skills</h2>
+          </div>
+          <div class="grid-3 skills">
+            <div class="card skill-group">
+              <h3>Core Front End</h3>
+              <ul>
+                <li>
+                  <span>TypeScript</span><i class="lv" style="--lv: 5"></i>
+                </li>
+                <li>
+                  <span>React / Hooks</span><i class="lv" style="--lv: 5"></i>
+                </li>
+                <li>
+                  <span>React Native</span><i class="lv" style="--lv: 4"></i>
+                </li>
+                <li><span>Next.js</span><i class="lv" style="--lv: 4"></i></li>
+                <li><span>Vue</span><i class="lv" style="--lv: 3"></i></li>
+              </ul>
+            </div>
+
+            <div class="card skill-group">
+              <h3>State &amp; Data</h3>
+              <ul>
+                <li>
+                  <span>SWR / TanStack Query</span
+                  ><i class="lv" style="--lv: 5"></i>
+                </li>
+                <li>
+                  <span>React Context</span><i class="lv" style="--lv: 5"></i>
+                </li>
+                <li>
+                  <span>Redux / Redux-Saga</span
+                  ><i class="lv" style="--lv: 4"></i>
+                </li>
+                <li>
+                  <span>Zod / Yup</span><i class="lv" style="--lv: 4"></i>
+                </li>
+                <li><span>Vuex</span><i class="lv" style="--lv: 3"></i></li>
+              </ul>
+            </div>
+
+            <div class="card skill-group">
+              <h3>Architecture &amp; Tooling</h3>
+              <ul>
+                <li>
+                  <span>Monorepo (Turborepo / Nx)</span
+                  ><i class="lv" style="--lv: 5"></i>
+                </li>
+                <li>
+                  <span>Webpack / Vite</span><i class="lv" style="--lv: 4"></i>
+                </li>
+                <li>
+                  <span>Storybook</span><i class="lv" style="--lv: 4"></i>
+                </li>
+                <li>
+                  <span>Playwright</span><i class="lv" style="--lv: 3"></i>
+                </li>
+                <li>
+                  <span>Headless CMS (Sanity)</span
+                  ><i class="lv" style="--lv: 3"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card skill-group">
+              <h3>Styling &amp; UI</h3>
+              <ul>
+                <li>
+                  <span>CSS / SCSS / RWD</span
+                  ><i class="lv" style="--lv: 5"></i>
+                </li>
+                <li><span>MUI</span><i class="lv" style="--lv: 4"></i></li>
+                <li>
+                  <span>Styled-components</span
+                  ><i class="lv" style="--lv: 4"></i>
+                </li>
+                <li><span>Figma</span><i class="lv" style="--lv: 3"></i></li>
+              </ul>
+            </div>
+
+            <div class="card skill-group">
+              <h3>Process &amp; Delivery</h3>
+              <ul>
+                <li>
+                  <span>Git / Git Flow</span><i class="lv" style="--lv: 5"></i>
+                </li>
+                <li>
+                  <span>ADR documentation</span
+                  ><i class="lv" style="--lv: 5"></i>
+                </li>
+                <li>
+                  <span>CI/CD (Jenkins / GitHub Actions)</span
+                  ><i class="lv" style="--lv: 4"></i>
+                </li>
+                <li><span>Docker</span><i class="lv" style="--lv: 3"></i></li>
+                <li>
+                  <span>Scrum / DDD</span><i class="lv" style="--lv: 4"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card skill-group">
+              <h3>AI Engineering</h3>
+              <ul>
+                <li>
+                  <span>MCP server design</span
+                  ><i class="lv" style="--lv: 4"></i>
+                </li>
+                <li>
+                  <span>Claude Code / Skills</span
+                  ><i class="lv" style="--lv: 5"></i>
+                </li>
+                <li>
+                  <span>AI dev workflows &amp; safety guidelines</span
+                  ><i class="lv" style="--lv: 4"></i>
+                </li>
+                <li>
+                  <span>Knowledge indexing &amp; RAG</span
+                  ><i class="lv" style="--lv: 3"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="legend">
+            Self-assessed: 5 = can design the architecture and lead others, 3 =
+            use independently on projects.
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="wrap">
+          <div class="sec-head">
+            <p class="eyebrow">About</p>
+            <h2>About Me</h2>
+          </div>
+          <div class="grid-2 traits">
+            <div class="card trait">
+              <strong>First-principles thinking</strong>
+              <p>
+                I look for the root reason behind technical decisions and value
+                designs that can be traced back, rather than following trends.
+              </p>
+            </div>
+            <div class="card trait">
+              <strong>Systems thinking</strong>
+              <p>
+                I care about architecture, documented decisions (ADRs), and
+                knowledge that accumulates and gets reused.
+              </p>
+            </div>
+            <div class="card trait">
+              <strong>Continuous learning</strong>
+              <p>
+                I actively explore new technology and engineering practice, and
+                stay curious about AI tools, how LLMs work and system
+                integration.
+              </p>
+            </div>
+            <div class="card trait">
+              <strong>Engineering discipline</strong>
+              <p>
+                I value code quality, maintainability and teamwork, and push
+                best practices and knowledge sharing.
+              </p>
+            </div>
+          </div>
+          <dl class="facts">
+            <div>
+              <dt>Education</dt>
+              <dd>
+                B.S., Dental Hygiene, China Medical University (2009 – 2012)
+              </dd>
+            </div>
+            <div>
+              <dt>Languages</dt>
+              <dd>
+                Mandarin Chinese (native) · English (TOEIC 815; reading, writing
+                and discussing technical material) · Taiwanese Hokkien
+                (intermediate)
+              </dd>
+            </div>
+            <div>
+              <dt>Work</dt>
+              <dd>Full-time · Neihu, Taipei · Open to remote work</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot-in">
+        <p>
+          Eddie Li ·
+          <a href="mailto:eddie.outsider@gmail.com">eddie.outsider@gmail.com</a>
+          ·
+          <a href="https://github.com/PPniaw" rel="me noopener" target="_blank"
+            >GitHub</a
+          >
+        </p>
+        <p class="muted">Last updated 2026.09</p>
+      </div>
+    </footer>
+  </body>
+</html>
