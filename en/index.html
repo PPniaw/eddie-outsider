@@ -146,8 +146,8 @@
                 <h3>
                   Independent Developer
                   <span class="org"
-                    >Pik (activity management &amp; matching platform) and kiss
-                    cut, personal products</span
+                    >Pik, activity management &amp; matching platform (personal
+                    product)</span
                   >
                 </h3>
                 <ul>
@@ -175,18 +175,10 @@
                     group-ups, and an AI assistant that only proposes; writes
                     need user confirmation.
                   </li>
-                  <li>
-                    Second product, kiss cut (stickers and vocabulary cards
-                    from photos; live on iOS since 2026.11): a three.js +
-                    expo-gl peel interaction, native Swift modules for
-                    on-device Vision cutout, Claude Haiku word recognition, a
-                    Cloudflare Workers backend and RevenueCat subscriptions.
-                  </li>
                 </ul>
                 <p class="chips">
                   <span>React Native</span><span>NestJS</span><span>Prisma</span
                   ><span>Next.js</span><span>Nx</span><span>Playwright</span
-                  ><span>Swift</span><span>Cloudflare Workers</span
                   ><span>Claude Code</span>
                 </p>
                 <p class="tl-links">
@@ -208,11 +200,67 @@
                     rel="noopener"
                     >pik-singular.com ↗</a
                   >
+                  <a href="https://apps.apple.com/app/id6796892371" target="_blank" rel="noopener"
+                    >App Store ↗</a
+                  >
+                  <a href="https://play.google.com/store/apps/details?id=com.piksingular.app" target="_blank" rel="noopener"
+                    >Google Play ↗</a
+                  >
+                </p>
+              </div>
+            </li>
+            <li class="tl-item is-now">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2026-07">2026.07</time> – Present
+                  <span class="pill">Current</span>
+                </div>
+                <h3>
+                  Independent Developer
+                  <span class="org">kiss cut (personal product)</span>
+                </h3>
+                <ul>
+                  <li>
+                    An app for making stickers and vocabulary cards from
+                    photos: snap everyday objects, cut them out into peelable
+                    stickers, publish sticker sheets, gift them by link and
+                    co-edit a collection book with friends. Live on iOS since
+                    2026.11, about three months after the first commit.
+                  </li>
+                  <li>
+                    Interaction and native: the peel interaction runs three.js
+                    on expo-gl and the sheets are drawn with Skia; six native
+                    Swift modules, with on-device cutout via Vision foreground
+                    masks plus a manual outline tool.
+                  </li>
+                  <li>
+                    AI and backend: photo-to-word recognition with Claude Haiku
+                    and structured output, English falling back to on-device
+                    Vision when offline; backend on Cloudflare Workers + D1 +
+                    R2 with daily quotas and rate limits.
+                  </li>
+                  <li>
+                    Release and operations: RevenueCat subscriptions, a free
+                    tier and a UI in five languages; App Store submissions
+                    through EAS, with JS-only fixes shipped over the air.
+                  </li>
+                </ul>
+                <p class="chips">
+                  <span>React Native</span><span>Expo</span><span>Swift</span
+                  ><span>three.js</span><span>Skia</span
+                  ><span>Cloudflare Workers</span><span>Claude API</span
+                  ><span>RevenueCat</span>
+                </p>
+                <p class="tl-links">
+                  <a href="https://pik-slides.vercel.app/s/kisscut-intro" target="_blank" rel="noopener"
+                    >Product tour (zh) ↗</a
+                  >
                   <a
                     href="https://apps.apple.com/app/id6829604753"
                     target="_blank"
                     rel="noopener"
-                    >kiss cut (App Store) ↗</a
+                    >App Store ↗</a
                   >
                 </p>
               </div>
@@ -489,6 +537,12 @@
                     rel="noopener"
                     >pik-singular.com ↗</a
                   >
+                  <a class="proj-link" href="https://apps.apple.com/app/id6796892371" target="_blank" rel="noopener"
+                    >App Store ↗</a
+                  >
+                  <a class="proj-link" href="https://play.google.com/store/apps/details?id=com.piksingular.app" target="_blank" rel="noopener"
+                    >Google Play ↗</a
+                  >
                 </span>
               </div>
               <p>
@@ -514,13 +568,18 @@
             <article class="card proj">
               <div class="proj-top">
                 <h3>kiss cut</h3>
-                <a
-                  class="proj-link"
-                  href="https://apps.apple.com/app/id6829604753"
-                  target="_blank"
-                  rel="noopener"
-                  >App Store ↗</a
-                >
+                <span class="proj-links">
+                  <a class="proj-link" href="https://pik-slides.vercel.app/s/kisscut-intro" target="_blank" rel="noopener"
+                    >Product tour (zh) ↗</a
+                  >
+                  <a
+                    class="proj-link"
+                    href="https://apps.apple.com/app/id6829604753"
+                    target="_blank"
+                    rel="noopener"
+                    >App Store ↗</a
+                  >
+                </span>
               </div>
               <p>
                 Make stickers from photos and learn languages by peeling them:
@@ -643,7 +702,17 @@
               <p>
                 Architecture, domain design and agent-native engineering
                 governance; a production system built by one person with AI
-                agents. 24 slides.
+                agents. 23 slides.
+              </p>
+              <span class="deck-open">Open ↗</span>
+            </a>
+            <a class="card deck" href="https://pik-slides.vercel.app/s/kisscut-intro" target="_blank" rel="noopener">
+              <span class="deck-tag">kiss cut</span>
+              <h3>kiss cut: Product Tour</h3>
+              <p>
+                Stickers from photos, languages learned by peeling: make, print,
+                gift, collect and review, shown with real app screens. 12
+                slides.
               </p>
               <span class="deck-open">Open ↗</span>
             </a>

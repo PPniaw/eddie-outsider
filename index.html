@@ -130,10 +130,7 @@
                   <span class="pill">現職</span>
                 </div>
                 <h3>
-                  獨立開發
-                  <span class="org"
-                    >Pik 活動管理媒合平台、kiss cut(個人產品)</span
-                  >
+                  獨立開發 <span class="org">Pik 活動管理媒合平台(個人產品)</span>
                 </h3>
                 <ul>
                   <li>
@@ -152,24 +149,58 @@
                     領域設計:CAS 樂觀鎖容量閘、Postgres LISTEN/NOTIFY
                     通知鏈、RRULE 週期活動、EXCLUDE 判桌、場館拼團;AI 助理只出提案、使用者確認才寫入。
                   </li>
-                  <li>
-                    第二個產品 kiss cut(拍照做貼紙與外語字卡,2026.11 iOS
-                    上架):three.js + expo-gl 的撕貼紙互動、Swift 原生模組做裝置端
-                    Vision 去背、Claude Haiku 認字、Cloudflare Workers
-                    後端與 RevenueCat 訂閱。
-                  </li>
                 </ul>
                 <p class="chips">
                   <span>React Native</span><span>NestJS</span><span>Prisma</span
                   ><span>Next.js</span><span>Nx</span><span>Playwright</span
-                  ><span>Swift</span><span>Cloudflare Workers</span
                   ><span>Claude Code</span>
                 </p>
                 <p class="tl-links">
                   <a href="https://pik-slides.vercel.app/s/pik-intro" target="_blank" rel="noopener">產品導覽 ↗</a>
                   <a href="https://pik-slides.vercel.app/s/pik-tech-deep-dive" target="_blank" rel="noopener">技術深掘 ↗</a>
                   <a href="https://pik-singular.com" target="_blank" rel="noopener">pik-singular.com ↗</a>
-                  <a href="https://apps.apple.com/app/id6829604753" target="_blank" rel="noopener">kiss cut(App Store)↗</a>
+                  <a href="https://apps.apple.com/app/id6796892371" target="_blank" rel="noopener">App Store ↗</a>
+                  <a href="https://play.google.com/store/apps/details?id=com.piksingular.app" target="_blank" rel="noopener">Google Play ↗</a>
+                </p>
+              </div>
+            </li>
+            <li class="tl-item is-now">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-meta">
+                  <time datetime="2026-07">2026.07</time> – 現在
+                  <span class="pill">現職</span>
+                </div>
+                <h3>獨立開發 <span class="org">kiss cut(個人產品)</span></h3>
+                <ul>
+                  <li>
+                    拍照做貼紙與外語字卡的 app:拍下生活裡的東西,去背做成撕得起來的貼紙,可以發行台紙、傳連結送人、和朋友共編收藏冊。2026.11
+                    iOS 上架,從第一個 commit 到上架約三個月。
+                  </li>
+                  <li>
+                    互動與原生:撕貼紙的互動是 three.js 跑在 expo-gl,台紙用
+                    Skia;6 個 Swift 原生模組,去背走 Vision
+                    前景遮罩、不連網,另有手動圈輪廓。
+                  </li>
+                  <li>
+                    AI 與後端:拍照認字用 Claude Haiku + structured
+                    output,英文在失敗或離線時退回裝置端 Vision;後端 Cloudflare
+                    Workers + D1 + R2,含每日額度與頻率限制。
+                  </li>
+                  <li>
+                    上架與營運:RevenueCat 訂閱、免費額度、5 種介面語言;EAS
+                    送審,純 JS 的修正走熱更新。
+                  </li>
+                </ul>
+                <p class="chips">
+                  <span>React Native</span><span>Expo</span><span>Swift</span
+                  ><span>three.js</span><span>Skia</span
+                  ><span>Cloudflare Workers</span><span>Claude API</span
+                  ><span>RevenueCat</span>
+                </p>
+                <p class="tl-links">
+                  <a href="https://pik-slides.vercel.app/s/kisscut-intro" target="_blank" rel="noopener">產品導覽 ↗</a>
+                  <a href="https://apps.apple.com/app/id6829604753" target="_blank" rel="noopener">App Store ↗</a>
                 </p>
               </div>
             </li>
@@ -392,6 +423,8 @@
                   <a class="proj-link" href="https://pik-slides.vercel.app/s/pik-intro" target="_blank" rel="noopener">產品導覽 ↗</a>
                   <a class="proj-link" href="https://pik-slides.vercel.app/s/pik-tech-deep-dive" target="_blank" rel="noopener">技術深掘 ↗</a>
                   <a class="proj-link" href="https://pik-singular.com" target="_blank" rel="noopener">pik-singular.com ↗</a>
+                  <a class="proj-link" href="https://apps.apple.com/app/id6796892371" target="_blank" rel="noopener">App Store ↗</a>
+                  <a class="proj-link" href="https://play.google.com/store/apps/details?id=com.piksingular.app" target="_blank" rel="noopener">Google Play ↗</a>
                 </span>
               </div>
               <p>
@@ -414,13 +447,10 @@
             <article class="card proj">
               <div class="proj-top">
                 <h3>kiss cut</h3>
-                <a
-                  class="proj-link"
-                  href="https://apps.apple.com/app/id6829604753"
-                  target="_blank"
-                  rel="noopener"
-                  >App Store ↗</a
-                >
+                <span class="proj-links">
+                  <a class="proj-link" href="https://pik-slides.vercel.app/s/kisscut-intro" target="_blank" rel="noopener">產品導覽 ↗</a>
+                  <a class="proj-link" href="https://apps.apple.com/app/id6829604753" target="_blank" rel="noopener">App Store ↗</a>
+                </span>
               </div>
               <p>
                 拍照做貼紙,撕著學外語:拍下生活裡的東西,在手機上去背,做成撕得起來的貼紙和外語字卡;可以發行台紙、傳連結送人、和朋友共編同一本收藏冊。iOS
@@ -517,7 +547,13 @@
             <a class="card deck" href="https://pik-slides.vercel.app/s/pik-tech-deep-dive" target="_blank" rel="noopener">
               <span class="deck-tag">Pik</span>
               <h3>Pik 技術深掘</h3>
-              <p>架構、領域設計與 agent-native 工程治理;一個人 + AI agent 的生產級系統。24 頁。</p>
+              <p>架構、領域設計與 agent-native 工程治理;一個人 + AI agent 的生產級系統。23 頁。</p>
+              <span class="deck-open">打開 ↗</span>
+            </a>
+            <a class="card deck" href="https://pik-slides.vercel.app/s/kisscut-intro" target="_blank" rel="noopener">
+              <span class="deck-tag">kiss cut</span>
+              <h3>kiss cut:產品導覽</h3>
+              <p>拍照做貼紙、撕著學外語:做、印、送、收、複習,用 App 實際畫面走一遍。12 頁。</p>
               <span class="deck-open">打開 ↗</span>
             </a>
             <a class="card deck" href="https://pik-slides.vercel.app/s/ai-harness-overview" target="_blank" rel="noopener">
