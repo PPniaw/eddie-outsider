@@ -146,15 +146,15 @@
                 <h3>
                   Independent Developer
                   <span class="org"
-                    >Pik, activity management &amp; matching platform (personal
-                    product)</span
+                    >Pik (activity management &amp; matching platform) and kiss
+                    cut, personal products</span
                   >
                 </h3>
                 <ul>
                   <li>
                     From product insight to app store: a sign-up and scheduling
-                    system shared by clubs, studios and venues. Live on iOS;
-                    Android closed testing completed.
+                    system shared by clubs, studios and venues. Live on both iOS
+                    and Android.
                   </li>
                   <li>
                     Shipped the whole system as one person with AI agents: iOS
@@ -163,7 +163,7 @@
                     in a single Nx monorepo.
                   </li>
                   <li>
-                    Built machine-checkable engineering governance: a 516-entry
+                    Built machine-checkable engineering governance: a 630-entry
                     decision log, a story ledger reconciled against tests, an
                     event map generated from code, and two rounds of adversarial
                     audits (zero P0 findings in round two).
@@ -171,13 +171,22 @@
                   <li>
                     Domain design: CAS optimistic locking for capacity, a
                     Postgres LISTEN/NOTIFY notification pipeline, RRULE
-                    recurring events, EXCLUDE-constraint table assignment, and
-                    sign-up-chain group formation.
+                    recurring events, EXCLUDE-constraint table assignment, venue
+                    group-ups, and an AI assistant that only proposes; writes
+                    need user confirmation.
+                  </li>
+                  <li>
+                    Second product, kiss cut (stickers and vocabulary cards
+                    from photos; live on iOS since 2026.11): a three.js +
+                    expo-gl peel interaction, native Swift modules for
+                    on-device Vision cutout, Claude Haiku word recognition, a
+                    Cloudflare Workers backend and RevenueCat subscriptions.
                   </li>
                 </ul>
                 <p class="chips">
                   <span>React Native</span><span>NestJS</span><span>Prisma</span
                   ><span>Next.js</span><span>Nx</span><span>Playwright</span
+                  ><span>Swift</span><span>Cloudflare Workers</span
                   ><span>Claude Code</span>
                 </p>
                 <p class="tl-links">
@@ -198,6 +207,12 @@
                     target="_blank"
                     rel="noopener"
                     >pik-singular.com ↗</a
+                  >
+                  <a
+                    href="https://apps.apple.com/app/id6829604753"
+                    target="_blank"
+                    rel="noopener"
+                    >kiss cut (App Store) ↗</a
                   >
                 </p>
               </div>
@@ -479,19 +494,55 @@
               <p>
                 A platform for group activities: organizers set up events
                 easily, and members sign up or join with one link shared in a
-                LINE group. Live on iOS; Android closed testing completed.
+                LINE group. Live on both iOS and Android.
               </p>
               <p class="proj-note">
                 Built independently. One Nx monorepo covers the RN/Expo app,
                 NestJS API, Next.js landing pages and the organization console;
                 includes a permission catalog, an activity lifecycle state
-                machine, venue booking and sign-up-chain group formation, with
+                machine, venue booking and group-ups, QR check-in and an AI
+                assistant, with
                 every design trade-off recorded as an ADR.
               </p>
               <p class="chips">
                 <span>React Native</span><span>Expo</span><span>NestJS</span
                 ><span>Prisma</span><span>Next.js</span><span>Nx</span
                 ><span>Playwright</span>
+              </p>
+            </article>
+
+            <article class="card proj">
+              <div class="proj-top">
+                <h3>kiss cut</h3>
+                <a
+                  class="proj-link"
+                  href="https://apps.apple.com/app/id6829604753"
+                  target="_blank"
+                  rel="noopener"
+                  >App Store ↗</a
+                >
+              </div>
+              <p>
+                Make stickers from photos and learn languages by peeling them:
+                snap everyday objects, cut them out on the phone, and turn them
+                into peelable stickers and vocabulary cards. Publish sticker
+                sheets, gift them by link, and co-edit a collection book with
+                friends. Live on iOS (2026.11).
+              </p>
+              <p class="proj-note">
+                Built independently. The peel interaction runs three.js on
+                expo-gl and the sheets are drawn with Skia; six native Swift
+                modules, with on-device cutout via Vision foreground masks.
+                Photo-to-word recognition uses Claude Haiku with structured
+                output; English falls back to on-device Vision when offline. Backend on Cloudflare
+                Workers + D1 + R2, RevenueCat subscriptions, UI in five
+                languages.
+              </p>
+              <p class="chips">
+                <span>React Native</span><span>Expo</span><span>Swift</span
+                ><span>three.js</span><span>Skia</span
+                ><span>Cloudflare Workers</span><span>Claude API</span
+                ><span>RevenueCat</span>
               </p>
             </article>
 
@@ -577,7 +628,7 @@
               <h3>Pik: Product Tour</h3>
               <p>
                 A walk through the real product: clubs, studios and venues, the
-                app and the consoles. 17 slides.
+                app and the consoles. 18 slides.
               </p>
               <span class="deck-open">Open ↗</span>
             </a>
@@ -592,7 +643,7 @@
               <p>
                 Architecture, domain design and agent-native engineering
                 governance; a production system built by one person with AI
-                agents. 23 slides.
+                agents. 24 slides.
               </p>
               <span class="deck-open">Open ↗</span>
             </a>
@@ -861,7 +912,7 @@
             >GitHub</a
           >
         </p>
-        <p class="muted">Last updated 2026.09</p>
+        <p class="muted">Last updated 2026.11</p>
       </div>
     </footer>
   </body>
